@@ -1,70 +1,36 @@
-# Site settings
-title: "Tiago Santos' Resume"
-description: "Tiago Santos' Résumé"
+#Update all the sections by editing the data.yml file inside _data folder.
 
-# Build settings
-markdown: kramdown
+# Site Settings
+title: Tiago Santos' Resume
+url: 'http://tvcsantos.github.io'
+
+#change it according to your repository name
+# disabling since we are using a custom domain
+#baseurl: '/online-cv' 
+
+description: Tiago Santos' Résumé
+# Style will be applied only after restarting the build or serve. Just choose one of the options.
+theme_skin: ceramic # blue turquoise green berry orange ceramic
+chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
+
+# Tracker
+# analytics: UA-83979019-1
+
+# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-# Resume settings
-resume_avatar:                  "true"
-resume_name:                    "Tiago Santos"
-resume_title:                   "Software Engineer"
+# Build settings
+compress-site: yes
 
-# used for the contact button in _layouts/resume.html
-resume_contact_email:           "tiago@santos.com.pt"
+encoding: "utf-8"
+compress_html: # - http://jch.penibelst.de/
+  clippings: all
+  ignore:
+    envs: development
 
-# the next two items are used for schema itemprops in _layouts/resume.html
-#resume_contact_telephone:       "555-7334"
-#resume_contact_address:         "742 Evergreen Terrace, Springfield"
-
-#resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334 • lisasimpson@youremailaddress.com"
-#display_header_contact_info:    "false"
-
-resume_header_intro: |
-  <p>Software developer, self-driven, motivated, a quick learner and a team
-  player.</p>
-  
-  <p>My main interests are in programming languages, and I'm quite fond of
-  developing applications using object oriented, functional and multiparadigm
-  programming languages.</p>
-
-# use "yes" to display the email contact button,
-# "no" to display an "I'm not looking for work" message,
-# or remove the resume_looking_for_work option entirely
-# to leave blank
-resume_looking_for_work:        "yes"
-
-# Decide which sections to use
-# comment out to hide
-resume_section_experience:      true
-resume_section_education:       true
-resume_section_projects:        true
-resume_section_skills:          true
-resume_section_languages:          true
-#resume_section_recognition:     true
-#resume_section_links:           true
-#resume_section_associations:    true
-resume_section_interests:       true
-
-# Resume social links
-# uncomment the options you wish to display, and add your own URL
-resume_social_links:
-  resume_github_url:            "https://github.com/tvcsantos"
-  #resume_twitter_url:           "http://twitter.com/jglovier"
-  #resume_dribbble_url:          "https://dribbble.com/jag"
-  # resume_facebook_url:          "insert Facebook URL here"
-  resume_linkedin_url:          "https://www.linkedin.com/in/tvcsantos"
-  # resume_instagram_url:         "insert your Instagram URL here"
-  #resume_website_url:           "https://tiago.santos.com.pt"
-  #resume_medium_url:            "https://medium.com/@jglovier"
-resume_print_social_links:      true
-
-# Design settings
-resume_theme:                   default
-
-# Note: when editing locally, remember to restart
-# your Jekyll server when you edit this file. Changes
-# to _config.yml are only recognized when the server starts
+# Development Settings
+port: 4000
+host: 0.0.0.0
+safe: false
