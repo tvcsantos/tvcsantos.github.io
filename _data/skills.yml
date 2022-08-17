@@ -1,0 +1,28 @@
+# Skills
+- skill: Soft Skills
+  description: |
+    <ul class="resume-item-list">
+    <li>Good Communication</li>
+    <li>Critical Thinking</li>
+    <li>Teamwork & Collaboration</li>
+    <li>Problem Analysis and Solving</li>
+    <li>Self-driven & Motivated</li>
+    <li>Quick Learner</li>
+    </ul>
+
+- skill: Hard Skills
+  description: |
+    Programming Languages: 
+    <ul class="resume-item-list">
+    <li>C#, Java (Expert)</li>
+    <li>Kotlin, Scala, Ocaml, C++, JavaScript, SQL (Proficient)</li>
+    <li>Python, TypeScript (Intermediate)</li>
+    </ul>
+    
+    Tools & Frameworks
+    <ul class="resume-item-list">
+    <li>SMT - Z3, SVN, Git, LaTeX</li>
+    <li>HTML, XML, CSS, Arduino</li>
+    <li>Angular4, Vue.js</li>
+    </ul>
+    

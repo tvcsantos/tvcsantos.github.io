@@ -1,0 +1,32 @@
+# Projects
+# uncomment the urls if you wish to display them, and add your own URL
+
+- project: Pulse &bull; 2016 &mdash; Present
+  #role: Founder & Primary Developer
+  #duration: 2016 &mdash; Present
+  url: "https://github.com/tvcsantos/Pulse"
+  description: |
+    An Arduino ultrasonic parking sensor.
+
+- project: ImProve &bull; 2010 &mdash; 2016
+  #role: Co-Founder & Organizer
+  #duration: 2010 &mdash; 2016
+  # url: "#"
+  description: |
+    Automatic static imperative program verification.
+
+- project: FunSpec &bull; 2010 &mdash; 2016
+  #role: Co-Founder & Organizer
+  #duration: 2010 &mdash; 2016
+  # url: "#"
+  description: |
+    Functional specification assertion language for static program
+    verification.
+
+- project: SpecJava &bull; 2008 &mdash; 2010
+  #role: Co-Founder & Organizer
+  #duration: 2008 &mdash; 2010
+  # url: "#"
+  description: |
+    Java compiler type system extension with lightweight static logical
+    assertions.

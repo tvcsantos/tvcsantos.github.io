@@ -1,0 +1,42 @@
+# Jobs
+- company: Mercedes-Benz.io
+  position: Software Engineer
+  duration: 2019 &mdash; Present
+  summary: |
+    <p>Backend developer on digital solutions for Mercedes-Benz After sales
+    area (e.g. vehicle details regarding service maintenance information &
+    history, warranties, recalls, etc.)</p>
+    
+    <p><b>Main programming languages used:</b> Kotlin, Java, SQL</p>
+    
+    <p><b>Other technologies & frameworks used:</b> Spring, PCF, AWS, Jenkins,
+    SonarQube, Docker, K8s, Jira, Confluence, Bitbucket, GitHub</p>
+
+- company: Affinity @ Collab, Collab
+  position: Software Engineer
+  duration: 2016 &mdash; 2017, 2017 &mdash; 2019
+  summary: |
+    <p>Backend engineering work on the main product, an IP-based multimedia
+    contact center solution.</p>
+    
+    <p><b>Main programming languages used:</b> C#, SQL</p>
+    
+    <p><b>Other languages, tools & frameworks used:</b> Java, C++, C,
+    JavaScript, TypeScript, Angular4, Microsoft Azure & Azure DevOps</p>
+
+- company: NOVA School of Science and Technology
+  position: Research Assistant
+  duration: 2009 &mdash; 2016
+  summary: |
+    <p>Worked on static analysis techniques for automatic program verification
+    during application development of imperative programs with data
+    structures and aliasing.</p>
+    
+    <p><b>Advisor:</b> Prof. Luís Caires.</p>
+
+- company: NOVA School of Science and Technology
+  position: Teaching Assistant
+  duration: 2009 &mdash; 2016
+  summary: |
+    <p>Lectured courses on programming languages and computational logic for
+    computer science students and other engineering students.</p>

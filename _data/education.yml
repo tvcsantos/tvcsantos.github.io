@@ -1,0 +1,23 @@
+# Degree
+- degree: Advanced Studies in Computer Science
+  uni: NOVA School of Science and Technology
+  year: 2010 &mdash; 2016
+  awards:
+    - award: FCT - MCTES Scholarship
+  summary: Specialization on Programming Languages
+
+- degree: MSc in Computer Science
+  uni: NOVA School of Science and Technology
+  year: |
+    2008 &mdash; 2010 | GPA: 18/20
+#  summary: |
+#    <b>GPA:</b> 18/20
+
+- degree: BSc in Computer Science
+  uni: NOVA School of Science and Technology
+  year: |
+    2005 &mdash; 2008 | GPA: 17/20
+  awards:
+    - award: Merit Scholarship | 2005 &mdash; 2006
+#  summary: |
+#    <b>GPA:</b> 17/20
