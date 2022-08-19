@@ -27,7 +27,7 @@ sidebar:
     #stack-overflow: # Number/Username, e.g. 123456/alandoe
     #codewars:
     #goodreads: # Number-Username, e.g. 123456-alandoe
-    #pdf: http://www.africau.edu/images/default/sample.pdf
+    pdf: assets/docs/resume.pdf
 
     languages:
       - idiom: Portuguese
@@ -129,15 +129,15 @@ projects:
         tagline: "An Arduino ultrasonic parking sensor."
 
       - title: ImProve
-        link: "#"
+        link: "https://tiago.santos.com.pt/improve"
         tagline: "Automatic static imperative program verification."
 
       - title: FunSpec
-        link: "#"
+        link: "https://tiago.santos.com.pt/funspec"
         tagline: "Functional specification assertion language for static program verification."
 
       - title: SpecJava
-        link: "#"
+        link: "https://tiago.santos.com.pt/specjava"
         tagline: "Java compiler type system extension with lightweight static logical assertions."
 
 #publications:
