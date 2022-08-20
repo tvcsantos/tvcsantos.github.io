@@ -125,7 +125,7 @@ projects:
 #      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
       - title: Pulse
-        link: "https://github.com/tvcsantos/Pulse"
+        link: "https://tvcsantos.github.io/pulse"
         tagline: "An Arduino ultrasonic parking sensor."
 
       - title: ImProve
