@@ -137,7 +137,7 @@ projects:
         tagline: "Functional specification assertion language for static program verification."
 
       - title: SpecJava
-        link: "https://tiago.santos.com.pt/specjava"
+        link: "https://tvcsantos.github.io/specjava"
         tagline: "Java compiler type system extension with lightweight static logical assertions."
 
 #publications:
