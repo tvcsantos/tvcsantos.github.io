@@ -128,7 +128,7 @@ projects:
         link: "https://tvcsantos.github.io/pulse"
         tagline: "An Arduino ultrasonic parking sensor."
 
-      - title: ImProve
+      - title: ImProVe
         link: "https://tiago.santos.com.pt/improve"
         tagline: "Automatic static imperative program verification."
 
