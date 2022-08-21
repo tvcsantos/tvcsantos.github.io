@@ -133,7 +133,7 @@ projects:
         tagline: "Automatic static imperative program verification."
 
       - title: FunSpec
-        link: "https://tiago.santos.com.pt/funspec"
+        link: "https://tvcsantos.github.io/funspec-docs"
         tagline: "Functional specification assertion language for static program verification."
 
       - title: SpecJava
