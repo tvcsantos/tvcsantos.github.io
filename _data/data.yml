@@ -129,7 +129,7 @@ projects:
         tagline: "An Arduino ultrasonic parking sensor."
 
       - title: ImProVe
-        link: "https://tiago.santos.com.pt/improve"
+        link: "https://tvcsantos.github.io/improved"
         tagline: "Automatic static imperative program verification."
 
       - title: FunSpec
