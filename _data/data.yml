@@ -36,6 +36,9 @@ sidebar:
       - idiom: English
         level: Professional
 
+    stack:
+      - item: Kotlin, Java, Spring, SQL, NoSQL, PCF, AWS, C#, Scala
+
     interests:
       - item: Walking, Nature, Sunsets
         link:
@@ -56,7 +59,7 @@ career-profile:
       player.
   
       My main interests are in programming languages, and I'm quite fond of
-      developing applications using object oriented, functional and multiparadigm
+      developing applications using object oriented, functional and multi-paradigm
       programming languages.
 education:
     - degree: Advanced Studies in Computer Science
@@ -88,8 +91,9 @@ experiences:
         
         **Main programming languages used:** Kotlin, Java, SQL
         
-        **Other technologies & frameworks used:** Spring, PCF, AWS, Jenkins,
-        SonarQube, Docker, K8s, Jira, Confluence, Bitbucket, GitHub
+        **Other technologies & frameworks used:** Spring, RabbitMQ, PCF, AWS,
+        K8s, Docker, Jenkins, GitHub Actions, SonarQube, BlackDuck, Jira, 
+        Confluence
     - role: Software Engineer
       time: 2016 &mdash; 2017, 2017 &mdash; 2019
       company: Affinity @ Collab, Collab
@@ -108,8 +112,6 @@ experiences:
         Worked on static analysis techniques for automatic program verification
         during application development of imperative programs with data
         structures and aliasing.
-  
-        **Advisor:** Prof. Luís Caires.
     - role: Teaching Assistant
       time: 2009 &mdash; 2016
       company: NOVA School of Science and Technology
