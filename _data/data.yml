@@ -8,7 +8,7 @@ sidebar:
 
     # Profile information
     name: Tiago Santos
-    tagline: Software Engineer
+    tagline: Software Architect
     avatar: tiago.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -81,26 +81,13 @@ education:
         GPA: 17/20
       award: Merit Scholarship | 2005 &mdash; 2006
 experiences:
-    - role: Software Architect
-      time: 2023 &mdash; Present
+    - role: Software Engineer; Software Architect
+      time: 2019 &mdash; Present; 2023 &mdash; Present
       company: Mercedes-Benz.io
       details: |
-        Software Architect and Backend developer on digital solutions for 
-        Mercedes-Benz After sales area (e.g. vehicle details regarding service 
+        Software Architect and Backend developer on digital solutions for
+        Mercedes-Benz After sales area (e.g. vehicle details regarding service
         maintenance information & history, warranties, recalls, etc.)
-        
-        **Main programming languages used:** Kotlin, Java, SQL
-        
-        **Other technologies & frameworks used:** Spring, RabbitMQ, PCF, AWS,
-        K8s, Docker, Jenkins, GitHub Actions, SonarQube, BlackDuck, Jira, 
-        Confluence
-    - role: Software Engineer
-      time: 2019 &mdash; Present
-      company: Mercedes-Benz.io
-      details: |
-        Backend developer on digital solutions for Mercedes-Benz After sales
-        area (e.g. vehicle details regarding service maintenance information &
-        history, warranties, recalls, etc.)
         
         **Main programming languages used:** Kotlin, Java, SQL
         
