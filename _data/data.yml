@@ -1,5 +1,5 @@
 sidebar:
-    education: True
+    education: False
 
     # Profile information
     name: Tiago Santos
@@ -44,90 +44,101 @@ sidebar:
         link:
 
 career-profile:
-    title: Hello & Welcome
+    title: About
     summary: |
-      I'm a Software developer, self-driven, motivated, a quick learner and a team
-      player.
-  
-      My main interests are in programming languages, and I'm quite fond of
-      developing applications using object oriented, functional and multi-paradigm
-      programming languages.
+      Software Architect with over 10 years of experience designing and building
+      backend systems and platform infrastructure. Currently driving architecture
+      decisions at Mercedes-Benz.io, from domain-level service design to org-wide
+      engineering practices. Background in programming languages research, with a
+      focus on static analysis and program verification.
 education:
-    - degree: Advanced Studies in Computer Science
+    - degree: PhD Candidate in Computer Science
       university: NOVA School of Science and Technology
       time: 2010 — 2016
       details: Programming Languages Specialization
       award: FCT - MCTES Scholarship
     - degree: MSc in Computer Science
       university: NOVA School of Science and Technology
-      time: |
-        2008 — 2010
-      details: |
-        GPA: 18/20
+      time: 2008 — 2010
     - degree: BSc in Computer Science
       university: NOVA School of Science and Technology
-      time: |
-        2005 — 2008
-      details: |
-        GPA: 17/20
+      time: 2005 — 2008
       award: Merit Scholarship | 2005 — 2006
 experiences:
     - role: Software Architect; Software Engineer
       time: 2023 — Present; 2019 — Present
       company: Mercedes-Benz.io
       details: |
-        Software Architect and Backend developer on digital solutions for
-        Mercedes-Benz After sales area (e.g. vehicle details regarding service
-        maintenance information & history, warranties, recalls, etc.)
-        
-        **Main programming languages used:** Kotlin, Java, SQL
-        
-        **Other technologies & frameworks used:** Spring, RabbitMQ, PCF, AWS,
-        K8s, Docker, Jenkins, GitHub Actions, SonarQube, BlackDuck, Jira, 
-        Confluence
+        Designing and evolving the backend architecture for Mercedes-Benz
+        After Sales digital products, spanning multiple microservices handling
+        vehicle service history, warranties, and recalls. Defining technical
+        direction, establishing engineering standards, and mentoring developers
+        across the team.
+      tags:
+        - Kotlin
+        - Java
+        - SQL
+        - Spring
+        - RabbitMQ
+        - PCF
+        - AWS
+        - K8s
+        - Docker
+        - Jenkins
+        - GitHub Actions
+        - SonarQube
+        - BlackDuck
+        - Jira
+        - Confluence
     - role: Software Engineer
-      time: 2017 — 2019, 2016 — 2017
-      company: Collab, Affinity @ Collab
+      time: 2016 — 2019
+      company: Collab
       details: |
-        Backend engineering work on the main product, an IP-based multimedia
-        contact center solution.
-  
-        **Main programming languages used:** C#, SQL
-  
-        **Other languages, tools & frameworks used:** Java, C++, C,
-        JavaScript, TypeScript, Angular4, Microsoft Azure & Azure DevOps
-    - role: Research Assistant
+        Built and maintained backend services for a high-performance, IP-based
+        multimedia contact center platform, where low latency and reliability
+        were critical. Responsible for multiple backend services while
+        contributing across the broader service landscape. Delivered end-to-end
+        features spanning backend and Angular front-end applications.
+      tags:
+        - C#
+        - SQL
+        - Java
+        - C++
+        - C
+        - JavaScript
+        - TypeScript
+        - Angular
+        - Azure
+        - Azure DevOps
+    - role: Research & Teaching Assistant
       time: 2009 — 2016
       company: NOVA School of Science and Technology
       details: |
-        Worked on static analysis techniques for automatic program verification
-        during application development of imperative programs with data
-        structures and aliasing.
-    - role: Teaching Assistant
-      time: 2009 — 2016
-      company: NOVA School of Science and Technology
-      details: |
-        Lectured courses on programming languages and computational logic for
-        computer science students and other engineering students.
+        Researched static analysis techniques for automatic verification of
+        imperative programs with data structures and aliasing. Lectured courses
+        across multiple disciplines, including computational logic, programming
+        languages, and object-oriented programming for computer science
+        students, as well as introductory programming for students in other
+        engineering fields such as civil, biomedical, and physics.
 
 projects:
     title: Projects
     assignments:
       - title: Pulse
         link: "https://tvcsantos.github.io/pulse"
-        tagline: "An Arduino ultrasonic parking sensor."
+        tagline: "An Arduino-based garage parking sensor using ultrasonic distance detection, with LED and buzzer feedback to guide vehicle positioning."
 
-      - title: ImProVe
-        link: "https://tvcsantos.github.io/improved"
-        tagline: "Automatic static imperative program verification."
+      - title: Tool Reporter Actions
+        link: "https://github.com/tvcsantos/tool-reporter-action-template"
+        tagline: "A reusable GitHub Action template and ecosystem for generating CI/CD tool reports, with implementations for BlackDuck, Kubeconform, and KubeLinter."
 
-      - title: FunSpec
-        link: "https://tvcsantos.github.io/funspecd"
-        tagline: "Functional specification assertion language for static program verification."
+      - title: RetroSync
+        link: "https://github.com/tvcsantos/retrosync"
+        tagline: "A cross-platform desktop app for managing and organizing retro game ROM libraries."
 
-      - title: SpecJava
-        link: "https://tvcsantos.github.io/specjava"
-        tagline: "Java compiler type system extension with lightweight static logical assertions."
+      - title: v2c-any
+        link: "https://github.com/tvcsantos/v2c-any"
+        tagline: "A Node.js service that emulates energy meters for V2C EV wallbox dynamic power control, supporting REST and MQTT modes."
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by 

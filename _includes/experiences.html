@@ -29,6 +29,14 @@
     </div><!--//details-->
     {% endif %}
 
+    {% if experience.tags %}
+    <ul class="experience-tags">
+      {% for tag in experience.tags %}
+      <li class="experience-tag">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
   </article><!--//item-->
   {% endfor %}
 

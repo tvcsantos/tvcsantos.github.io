@@ -26,6 +26,12 @@
   .main-wrapper .upper-row {
     margin-bottom: 0;
   }
+
+  .stack-container,
+  .languages-container,
+  .interests-container {
+    display: none;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */

@@ -13,9 +13,40 @@
   <p class="tagline">{{ sidebar.tagline }}</p>
   {% endif %}
 
-</div><!--//profile-container-->
+  <ul class="contact-icons" aria-label="Contact links">
+    {% if sidebar.email %}
+    <li><a href="mailto:{{ sidebar.email }}" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.phone %}
+    <li><a href="tel:{{ sidebar.phone }}" aria-label="Phone"><i class="fas fa-phone" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.linkedin %}
+    <li><a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.github %}
+    <li><a href="https://github.com/{{ sidebar.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.gitlab %}
+    <li><a href="https://gitlab.com/{{ sidebar.gitlab }}" target="_blank" rel="noopener noreferrer" aria-label="GitLab"><i class="fab fa-gitlab" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.bitbucket %}
+    <li><a href="https://bitbucket.org/{{ sidebar.bitbucket }}" target="_blank" rel="noopener noreferrer" aria-label="Bitbucket"><i class="fab fa-bitbucket" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.twitter %}
+    <li><a href="https://twitter.com/{{ sidebar.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.stack-overflow %}
+    <li><a href="https://stackoverflow.com/users/{{ sidebar.stack-overflow }}" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow"><i class="fab fa-stack-overflow" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.website %}
+    <li><a href="https://{{ sidebar.website }}" target="_blank" rel="noopener noreferrer" aria-label="Website"><i class="fas fa-globe-americas" aria-hidden="true"></i></a></li>
+    {% endif %}
+    {% if sidebar.pdf %}
+    <li><a href="{{ sidebar.pdf }}" target="_blank" rel="noopener noreferrer" aria-label="Resume PDF"><i class="fas fa-file-pdf" aria-hidden="true"></i></a></li>
+    {% endif %}
+  </ul>
 
-{% include contact.html %}
+</div><!--//profile-container-->
 
 {% include stack.html %}
 

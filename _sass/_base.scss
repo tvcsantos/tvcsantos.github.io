@@ -97,6 +97,22 @@ p {
     border-radius: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    a {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.8);
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
   .contact-list {
     .fas,
     .fab,
@@ -149,8 +165,16 @@ p {
     }
   }
   .languages-container {
-    .lang-desc {
-      color: rgba(255, 255, 255, 0.6);
+    .lang-level {
+      display: inline-block;
+      padding: 1px 8px;
+      font-size: 11px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50px;
+      margin-left: 4px;
+      vertical-align: middle;
     }
   }
 
@@ -241,6 +265,26 @@ p {
   .university {
     margin-bottom: 10px;
     color: $text-grey;
+  }
+
+  .experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+  }
+
+  .experience-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $text-color-secondary;
+    background: $smoky-white;
+    border-radius: 50px;
+    white-space: nowrap;
   }
 
   .project-title {

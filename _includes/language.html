@@ -10,7 +10,7 @@
     {% for language in languages %}
     <li>
       {{ language.idiom }}
-      <span class="lang-desc">({{ language.level }})</span>
+      <span class="lang-level">{{ language.level }}</span>
     </li>
     {% endfor %}
   </ul>
