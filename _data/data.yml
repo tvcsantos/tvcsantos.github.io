@@ -37,7 +37,15 @@ sidebar:
         level: Professional
 
     stack:
-      - item: Kotlin, Java, Spring, SQL, NoSQL, PCF, AWS, C#, Scala
+      - item: Kotlin
+      - item: Java
+      - item: Spring
+      - item: SQL
+      - item: NoSQL
+      - item: PCF
+      - item: AWS
+      - item: C#
+      - item: Scala
 
     interests:
       - item: Walking, Nature, Sunsets
@@ -64,25 +72,25 @@ career-profile:
 education:
     - degree: Advanced Studies in Computer Science
       university: NOVA School of Science and Technology
-      time: 2010 &mdash; 2016
+      time: 2010 — 2016
       details: Programming Languages Specialization
       award: FCT - MCTES Scholarship
     - degree: MSc in Computer Science
       university: NOVA School of Science and Technology
       time: |
-        2008 &mdash; 2010
+        2008 — 2010
       details: |
         GPA: 18/20
     - degree: BSc in Computer Science
       university: NOVA School of Science and Technology
       time: |
-        2005 &mdash; 2008
+        2005 — 2008
       details: |
         GPA: 17/20
-      award: Merit Scholarship | 2005 &mdash; 2006
+      award: Merit Scholarship | 2005 — 2006
 experiences:
     - role: Software Architect; Software Engineer
-      time: 2023 &mdash; Present; 2019 &mdash; Present
+      time: 2023 — Present; 2019 — Present
       company: Mercedes-Benz.io
       details: |
         Software Architect and Backend developer on digital solutions for
@@ -95,7 +103,7 @@ experiences:
         K8s, Docker, Jenkins, GitHub Actions, SonarQube, BlackDuck, Jira, 
         Confluence
     - role: Software Engineer
-      time: 2017 &mdash; 2019, 2016 &mdash; 2017
+      time: 2017 — 2019, 2016 — 2017
       company: Collab, Affinity @ Collab
       details: |
         Backend engineering work on the main product, an IP-based multimedia
@@ -106,14 +114,14 @@ experiences:
         **Other languages, tools & frameworks used:** Java, C++, C,
         JavaScript, TypeScript, Angular4, Microsoft Azure & Azure DevOps
     - role: Research Assistant
-      time: 2009 &mdash; 2016
+      time: 2009 — 2016
       company: NOVA School of Science and Technology
       details: |
         Worked on static analysis techniques for automatic program verification
         during application development of imperative programs with data
         structures and aliasing.
     - role: Teaching Assistant
-      time: 2009 &mdash; 2016
+      time: 2009 — 2016
       company: NOVA School of Science and Technology
       details: |
         Lectured courses on programming languages and computational logic for

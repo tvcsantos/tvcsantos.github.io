@@ -2,17 +2,28 @@
 layout: default
 ---
 
-
-{% include career-profile.html %}
+<div id="about">
+  {% include career-profile.html %}
+</div>
 
 {% unless site.data.data.sidebar.education %}
+<div id="education">
   {% include education.html %}
+</div>
 {% endunless %}
 
-{% include experiences.html %}
+<div id="experience">
+  {% include experiences.html %}
+</div>
 
-{% include projects.html %}
+<div id="projects">
+  {% include projects.html %}
+</div>
 
-{% include publications.html %}
+<div id="publications">
+  {% include publications.html %}
+</div>
 
-{% include skills.html %}
+<div id="skills">
+  {% include skills.html %}
+</div>

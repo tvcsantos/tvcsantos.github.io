@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /* ======= Base ======= */
 body {
   font-family: "Roboto", sans-serif;
@@ -19,10 +21,10 @@ h6 {
 }
 
 a {
-  color: darken($theme-color, 15%);
+  color: color.adjust($theme-color, $lightness: -15%);
   &:hover {
     text-decoration: underline;
-    color: darken($theme-color, 30%);
+    color: color.adjust($theme-color, $lightness: -30%);
   }
   &:focus {
     text-decoration: none;
@@ -121,13 +123,15 @@ p {
       }
     }
     .meta {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
       font-weight: 500;
       margin-bottom: 0px;
       margin-top: 0;
     }
     .time {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
       font-weight: 500;
       margin-bottom: 0px;
     }
@@ -167,6 +171,24 @@ p {
       }
     }
   }
+
+  .stack-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 0;
+  }
+
+  .stack-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    white-space: nowrap;
+  }
 }
 
 .main-wrapper {
@@ -177,7 +199,7 @@ p {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
-    color: darken($theme-color, 15%);
+    color: color.adjust($theme-color, $lightness: -15%);
     position: relative;
     margin-top: 0;
     margin-bottom: 20px;
@@ -222,7 +244,7 @@ p {
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 5px;
-    color: darken($theme-color, 15%);
+    color: color.adjust($theme-color, $lightness: -15%);
   }
   .projects-section {
     .intro {
@@ -270,7 +292,7 @@ p {
   }
   .level-bar-inner {
     height: 12px;
-    background: lighten($theme-color, 15%);
+    background: color.adjust($theme-color, $lightness: 15%);
   }
 }
 
@@ -280,6 +302,12 @@ p {
     line-height: 1.6;
     color: $text-color-secondary;
     font-size: 13px;
+  }
+
+  .theme-credit {
+    line-height: 1.6;
+    color: $darker-grey;
+    font-size: 11px;
   }
 
   .fa-heart {

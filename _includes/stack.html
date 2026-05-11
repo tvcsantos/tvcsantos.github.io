@@ -6,11 +6,11 @@
     Tech Stack
   </h2>
 
-  <ul class="list-unstyled stack-list">
+  <div class="stack-badges">
     {% for element in stack %}
-    <li>{{ element.item }}</li>
+    <span class="stack-badge">{{ element.item }}</span>
     {% endfor %}
-  </ul>
+  </div>
 
 </div><!--//stack-->
 {% endif %}
