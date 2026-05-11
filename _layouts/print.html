@@ -1,5 +1,4 @@
 ---
-#Add "layout: compress" here to compress the html code
 ---
 
 <!DOCTYPE html>
@@ -15,9 +14,11 @@
   </style>
   <body>
     <div class="wrapper">
-      {% include sidebar.html %}
+      <aside class="sidebar-wrapper" aria-label="Profile sidebar">
+        {% include sidebar.html %}
+      </aside>
 
-      <div class="main-wrapper">{{ content }}</div>
+      <main class="main-wrapper" id="main-content">{{ content }}</main>
     </div>
     {% include scripts.html %}
   </body>

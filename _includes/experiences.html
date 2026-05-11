@@ -2,7 +2,7 @@
 {% if experiences %}
 <section class="section experiences-section">
   <h2 class="section-title">
-    <span class="fa-stack fa-xs">
+    <span class="fa-stack fa-xs" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
     </span>
@@ -10,7 +10,7 @@
   </h2>
 
   {% for experience in experiences %}
-  <div class="item">
+  <article class="item">
 
     <div class="meta">
 
@@ -29,7 +29,7 @@
     </div><!--//details-->
     {% endif %}
 
-  </div><!--//item-->
+  </article><!--//item-->
   {% endfor %}
 
 </section><!--//section-->

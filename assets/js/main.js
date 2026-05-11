@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Smooth scroll for anchor links
+  // Smooth scroll for anchor links with focus management
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
       var targetId = this.getAttribute('href').substring(1);
@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth' });
+        if (!target.hasAttribute('tabindex')) {
+          target.setAttribute('tabindex', '-1');
+        }
+        target.focus();
       }
     });
   });

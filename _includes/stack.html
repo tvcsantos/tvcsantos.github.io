@@ -1,16 +1,16 @@
 {% assign stack = site.data.data.sidebar.stack %}
 {% if stack %}
-<div class="stack-container container-block">
+<section class="stack-container container-block" aria-label="Tech Stack">
 
   <h2 class="container-block-title">
     Tech Stack
   </h2>
 
-  <div class="stack-badges">
+  <ul class="stack-badges" role="list">
     {% for element in stack %}
-    <span class="stack-badge">{{ element.item }}</span>
+    <li class="stack-badge" role="listitem">{{ element.item }}</li>
     {% endfor %}
-  </div>
+  </ul>
 
-</div><!--//stack-->
+</section><!--//stack-->
 {% endif %}

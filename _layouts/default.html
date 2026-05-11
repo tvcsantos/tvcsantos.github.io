@@ -1,17 +1,19 @@
 ---
-#Add "layout: compress" here to compress the html code
 ---
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
 
 <body>
+  <a href="#main-content" class="skip-to-main">Skip to main content</a>
   <div class="wrapper">
-    {% include sidebar.html %}
+    <aside class="sidebar-wrapper" aria-label="Profile sidebar">
+      {% include sidebar.html %}
+    </aside>
 
-    <div class="main-wrapper">
+    <main class="main-wrapper" id="main-content">
         {{ content }}
-    </div>
+    </main>
   </div>
 
   {% include footer.html %}

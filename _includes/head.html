@@ -3,11 +3,10 @@
 
   <!-- Meta -->
   <meta charset="utf-8">
-  {% if site.chrome_mobile_color %}
-  <meta name="theme-color" content="{{ site.chrome_mobile_color }}">
-  {% endif%}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ site.description | default: 'A beautiful Jekyll theme for creating resume' }}">
+  {% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
+  {% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ site.title }}">
@@ -18,8 +17,19 @@
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.data.data.sidebar.avatar }}">
   {% endif %}
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{ site.description | default: 'A beautiful Jekyll theme for creating resume' }}">
+  {% if site.data.data.sidebar.avatar %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.data.data.sidebar.avatar }}">
+  {% endif %}
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,8 +40,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+  <!-- Structured Data -->
+  {% assign sidebar = site.data.data.sidebar %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ sidebar.name }}",
+    "jobTitle": "{{ sidebar.tagline }}",
+    "url": "{{ site.url }}{{ site.baseurl }}/"{% if sidebar.email %},
+    "email": "{{ sidebar.email }}"{% endif %}{% if sidebar.avatar %},
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}"{% endif %}{% if sidebar.linkedin or sidebar.github %},
+    "sameAs": [{% if sidebar.linkedin %}
+      "https://linkedin.com/in/{{ sidebar.linkedin }}"{% endif %}{% if sidebar.github %}{% if sidebar.linkedin %},{% endif %}
+      "https://github.com/{{ sidebar.github }}"{% endif %}
+    ]{% endif %}
+  }
+  </script>
 </head>

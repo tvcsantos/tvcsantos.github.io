@@ -3,7 +3,7 @@
 <section class="skills-section section">
 
   <h2 class="section-title">
-    <span class="fa-stack fa-xs">
+    <span class="fa-stack fa-xs" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
     </span>
@@ -17,7 +17,7 @@
 
       <h3 class="level-title">{{ skill.name }}</h3>
 
-      <div class="level-bar">
+      <div class="level-bar" role="progressbar" aria-label="{{ skill.name }} proficiency" aria-valuenow="{{ skill.level | replace: '%', '' }}" aria-valuemin="0" aria-valuemax="100">
         <div class="level-bar-inner" data-level="{{ skill.level }}">
         </div>
       </div><!--//level-bar-->

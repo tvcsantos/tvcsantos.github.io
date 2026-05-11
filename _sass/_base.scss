@@ -1,5 +1,20 @@
 @use "sass:color";
 
+/* ======= Skip Link ======= */
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: $theme-color;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 1000;
+  &:focus {
+    top: 0;
+  }
+}
+
 /* ======= Base ======= */
 body {
   font-family: "Roboto", sans-serif;
@@ -27,7 +42,11 @@ a {
     color: color.adjust($theme-color, $lightness: -30%);
   }
   &:focus {
-    text-decoration: none;
+    outline: 2px solid color.adjust($theme-color, $lightness: -30%);
+    outline-offset: 2px;
+  }
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 }
 
@@ -55,7 +74,6 @@ p {
   }
   .profile-container {
     padding: 30px;
-    //background: darken($theme-color, 10%);
     background: rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #fff;
@@ -67,21 +85,15 @@ p {
     margin-bottom: 10px;
   }
   .tagline {
-    color: rgba(256, 256, 256, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .profile {
-    margin-bottom: 15px;
-  }
-
   .avatar {
-    //used for profile image
     max-width: 100px;
     margin-bottom: 15px;
-    border: 0px solid #fff;
     border-radius: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
@@ -138,7 +150,7 @@ p {
   }
   .languages-container {
     .lang-desc {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 
@@ -162,21 +174,13 @@ p {
     }
   }
 
-  .stack-list {
-    margin-bottom: 0;
-    li {
-      margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
   .stack-badges {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-bottom: 0;
+    padding: 0;
+    list-style: none;
   }
 
   .stack-badge {
