@@ -4,15 +4,6 @@
     padding: 0;
   }
 
-  .sidebar-wrapper {
-    position: static;
-    width: inherit;
-  }
-
-  .wrapper {
-    display: block;
-  }
-
   .main-wrapper {
     padding: 30px;
   }
@@ -25,12 +16,6 @@
 
   .main-wrapper .upper-row {
     margin-bottom: 0;
-  }
-
-  .stack-container,
-  .languages-container,
-  .interests-container {
-    display: none;
   }
 }
 

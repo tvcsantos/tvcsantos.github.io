@@ -1,8 +1,11 @@
 {% assign stack = site.data.data.sidebar.stack %}
 {% if stack %}
-<section class="stack-container container-block" aria-label="Tech Stack">
-
-  <h2 class="container-block-title">
+<section class="section stack-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs" aria-hidden="true">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-layer-group fa-stack-1x fa-inverse"></i>
+    </span>
     Tech Stack
   </h2>
 
@@ -11,6 +14,5 @@
     <li class="stack-badge" role="listitem">{{ element.item }}</li>
     {% endfor %}
   </ul>
-
 </section><!--//stack-->
 {% endif %}
