@@ -45,6 +45,19 @@
   <!-- Theme CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
+  <!-- Anti-flash: apply saved theme before first paint -->
+  <script>
+    (function() {
+      var pref;
+      try { pref = localStorage.getItem('theme-preference'); } catch(e) {}
+      if (!pref) pref = 'system';
+      var resolved = pref === 'system'
+        ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+        : pref;
+      document.documentElement.setAttribute('data-theme', resolved);
+    })();
+  </script>
+
   <!-- Structured Data -->
   {% assign sidebar = site.data.data.sidebar %}
   <script type="application/ld+json">

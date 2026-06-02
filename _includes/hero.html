@@ -2,6 +2,24 @@
 
 <header class="hero-banner">
 
+  <div class="theme-toggle">
+    <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
+      <i class="fas fa-sun" id="theme-icon" aria-hidden="true"></i>
+      <i class="fas fa-caret-down" aria-hidden="true"></i>
+    </button>
+    <div class="theme-dropdown" id="theme-dropdown" role="menu">
+      <button class="theme-option" role="menuitem" data-theme="light">
+        <i class="fas fa-sun" aria-hidden="true"></i> Light
+      </button>
+      <button class="theme-option" role="menuitem" data-theme="dark">
+        <i class="fas fa-moon" aria-hidden="true"></i> Dark
+      </button>
+      <button class="theme-option" role="menuitem" data-theme="system">
+        <i class="fas fa-desktop" aria-hidden="true"></i> System
+      </button>
+    </div>
+  </div>
+
   {% if sidebar.name %}
   {% if sidebar.avatar %}
   <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="{{ sidebar.name }} profile picture" width="100" height="100" loading="lazy" decoding="async" />
