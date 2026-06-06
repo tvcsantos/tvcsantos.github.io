@@ -132,11 +132,11 @@ projects:
         tagline: "A reusable GitHub Action template and ecosystem for generating CI/CD tool reports, with implementations for BlackDuck, Kubeconform, and KubeLinter."
 
       - title: RetroSync
-        link: "https://github.com/tvcsantos/retrosync"
+        link: "https://tvcsantos.github.io/retrosync"
         tagline: "A cross-platform desktop app for managing and organizing retro game ROM libraries."
 
       - title: v2c-any
-        link: "https://github.com/tvcsantos/v2c-any"
+        link: "https://tvcsantos.github.io/v2c-any"
         tagline: "A Node.js service that emulates energy meters for V2C EV wallbox dynamic power control, supporting REST and MQTT modes."
 
 footer: >
