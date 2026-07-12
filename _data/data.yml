@@ -127,9 +127,9 @@ projects:
         link: "https://tvcsantos.github.io/pulse"
         tagline: "An Arduino-based garage parking sensor using ultrasonic distance detection, with LED and buzzer feedback to guide vehicle positioning."
 
-      - title: Tool Reporter Actions
-        link: "https://github.com/tvcsantos/tool-reporter-action-template"
-        tagline: "A reusable GitHub Action template and ecosystem for generating CI/CD tool reports, with implementations for BlackDuck, Kubeconform, and KubeLinter."
+      - title: Versu
+        link: "https://versuhq.github.io"
+        tagline: "A CLI and GitHub Action that automatically analyzes commit history using Conventional Commits and determines semantic version bumps without manual intervention."
 
       - title: RetroSync
         link: "https://tvcsantos.github.io/retrosync"
